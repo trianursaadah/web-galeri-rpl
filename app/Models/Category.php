@@ -15,7 +15,8 @@ class Category extends Model
     protected $fillable = [
         'judul',
         'slug',
-        'icon'
+        'icon',
+        'dekskripsi'
     ];
 
     public function setNameAttribute($value)

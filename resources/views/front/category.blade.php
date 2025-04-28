@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +14,7 @@
     <x-navbar/>
     <nav id="Category" class="max-w-[1130px] mx-auto flex justify-center items-center gap-4 mt-[30px]">
         @foreach ($categories as $item_category)
-        <a href="{{ route('front.category', $item_category->slug) }}" class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
+        <a href="{{ route('front.category', $item_category->slug) }}" class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#746d6d] text-[#9c2323]  hover:ring-2 hover:ring-[#FF6B18]">
             <div class="flex w-6 h-6 shrink-0">
                 <img src="{{ Storage::url($item_category->icon) }}" alt="icon" />
             </div>
@@ -43,7 +42,7 @@
 					</div>
 					<div class="flex flex-col gap-[6px]">
 						<h3 class="text-lg leading-[27px] font-bold">{{ substr($post->judul, 0, 70) }}{{ strlen($post->judul) > 70 ? '...' :''  }}</h3>
-						<p class="text-sm leading-[21px] text-[#A3A6AE]">{{ $post->created_at->format('M d, Y') }}</p>
+						<p class="text-sm leading-[21px] text-[#faf9f9]">{{ $post->created_at->format('M d, Y') }}</p>
 					</div>
 				</div>
 			</a>
@@ -59,7 +58,7 @@
 					<img src="{{ Storage::url($banner_advertisements->thumbnail) }}" class="object-cover w-full h-full" alt="ads" />
 				</div>
 			</a>
-			<p class="font-medium text-sm leading-[21px] text-[#A3A6AE] flex gap-1">
+			<p class="font-medium text-sm leading-[21px] text-[#921f1f] flex gap-1">
 				Our Advertisement <a href="#" class="w-[18px] h-[18px]"><img
 						src="{{ asset('assets/images/icons/message-question.svg') }}" alt="icon" /></a>
 			</p>

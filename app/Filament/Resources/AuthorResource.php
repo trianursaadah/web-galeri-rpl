@@ -26,7 +26,7 @@ class AuthorResource extends Resource
                 Forms\Components\TextInput::make('username')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('slug')
+                Forms\Components\TextInput::make('seotital')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('occupation')
@@ -44,7 +44,7 @@ class AuthorResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('username')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('slug')
+                Tables\Columns\TextColumn::make('seotital')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('occupation')
                     ->searchable(),

@@ -32,6 +32,9 @@ class CategoryResource extends Resource
                 Forms\Components\FileUpload::make('icon')
                     ->required()
                     ->image(),
+                    Forms\Components\TextInput::make('dekskripsi')
+                    ->required()
+                    ->maxLength(255),
             ]);
     }
 
@@ -56,6 +59,8 @@ class CategoryResource extends Resource
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+                    Tables\Columns\TextColumn::make('dekskripsi')
+                    ->searchable(),
             ])
             ->filters([
                 //

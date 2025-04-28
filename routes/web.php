@@ -9,6 +9,6 @@ Route::get('/details{post:slug}', [FrontController::class, 'details'])->name('fr
 
 Route::get('/category/{category:slug}', [FrontController::class, 'category'])->name('front.category');
 
-Route::get('/author/{author:slug}', [FrontController::class, 'author'])->name('front.author');
+Route::get('/author/{author:seotital}', [FrontController::class, 'author'])->name('front.author');
 
 Route::get('/search', [FrontController::class, 'search'])->name('front.search');

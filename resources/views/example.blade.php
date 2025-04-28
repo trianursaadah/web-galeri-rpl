@@ -134,7 +134,7 @@
 					</div>
 				</a>
 
-				<p class="font-medium text-sm leading-[21px] text-[#A3A6AE] flex gap-1">
+				<p class="font-medium text-sm leading-[21px] text-[#ad2828] flex gap-1">
 					Our Advertisement <a href="#" class="w-[18px] h-[18px]"><img src="assets/images/icons/message-question.svg" alt="icon" /></a>
 				</p>
 			</div>

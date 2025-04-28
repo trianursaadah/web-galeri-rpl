@@ -14,14 +14,14 @@ class Author extends Model
 
     protected $fillable = [
         'username',
-        'slug',
+        'seotital',
         'occupation',
         'avatar'];
 
     public function setNameAttribute($value)
     {
         $this->attributes['username'] = $value;
-        $this->attributes['slug'] = Str::slug($value);
+        $this->attributes['seotital'] = Str::seotital($value);
     }
 
     public function posts(): HasMany
